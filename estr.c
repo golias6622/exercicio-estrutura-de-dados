@@ -3,18 +3,18 @@
 
 int main() {
 	int tamanho=10;
-    int *vector = (int*) malloc(tamanho*sizeof(int));
-    if (vector == NULL){
+    int *vet = (int*) malloc(tamanho*sizeof(int));
+    if (vet == NULL){
     	printf("erro. sem memoria.");
     	exit(1);
 	}
     for (int i = 0; i < 10; i++) {
-        vector[i] = i;
+        vet[i] = i;
     }
     for (int i = 0; i < 10; i++) {
-        printf("%d ", vector[i]);
+        printf("%d ", vet[i]);
     }
     printf("\n");
-    free(vector);
+    free(vet);
     return 0;
 }
